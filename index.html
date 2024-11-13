@@ -264,9 +264,12 @@
           }
         }
       });
+  function len(){p=document.getElementById("l").value
+document.getElementById("l").innerHTML=p.length;}
     </script>
     <br />
-    <textarea id="program" cols="80" rows="20" placeholder="code"></textarea>
+    <a id="l"></a> bytes<br>
+    <textarea id="program" cols="80" rows="20" placeholder="code" onchange="len()"></textarea>
     <textarea id="input" cols="80" rows="20" placeholder="input"></textarea>
     <textarea
       id="output"
