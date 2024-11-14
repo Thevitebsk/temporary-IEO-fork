@@ -139,7 +139,6 @@
           var erroc = false;
           try {
             var output = func(code, input);
-            if (output.length==4096){throw new err('The program has more than 4096 bytes:','\n',output)};};
           } catch (err) {
             document.getElementById("log").value = err.message + "\n";
             erroc = true;
