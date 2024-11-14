@@ -5,5 +5,5 @@ This fork adds:
   * [6](https://esolangs.org/wiki/6)
   * [>*&<<&^](https://esolangs.org/wiki/%E2%80%BA*%26%C2%AB%26%5E)
 * Features:
-  * Byte counter (in progress)
+  * Byte counter
   * Running programs using the output field
