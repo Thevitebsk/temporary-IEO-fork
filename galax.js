@@ -9,5 +9,5 @@ function galax(program,input){
     if (program[p]=="<",program[p+1]=="<"){acum-=2;p++;}
     if (program[p]=="^"){output+=String.fromCharCode(acum);};
   };
-return output
+return output;
 };
