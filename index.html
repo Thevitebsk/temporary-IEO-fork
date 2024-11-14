@@ -264,11 +264,11 @@
           }
         }
       });
-function len(){p=document.getElementById("l").value;document.getElementById("l").innerHTML=p.length;};
+function len(){p=document.getElementById("program").value;document.getElementById("l").innerHTML=p.length;};
     </script>
     <br />
     <a id="l">0</a> bytes<br>
-    <textarea id="program" cols="80" rows="20" placeholder="code"></textarea>
+    <textarea id="program" cols="80" rows="20" placeholder="code" onchange="run()"></textarea>
     <textarea id="input" cols="80" rows="20" placeholder="input"></textarea>
     <textarea
       id="output"
@@ -276,6 +276,7 @@ function len(){p=document.getElementById("l").value;document.getElementById("l")
       rows="20"
       readonly
       placeholder="output"
+      onclick="run()"
     ></textarea>
     <textarea
       id="log"
@@ -283,9 +284,9 @@ function len(){p=document.getElementById("l").value;document.getElementById("l")
       rows="20"
       readonly
       placeholder="log"
+      value="Press the output area to run your program"
     ></textarea>
     <br />
-    <button onclick="run();len()" title="Executes the program">Run</button>
     <button
       onclick="create_link()"
       title="Creates a permanent link that can later be used to execute the same program"
